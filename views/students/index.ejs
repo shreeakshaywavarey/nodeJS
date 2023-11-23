@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student List</title>
+</head>
+<body>
+  <h1>Student List</h1>
+  
+  <ul>
+    <% students.forEach(student => { %>
+      <li>
+        <!-- Assuming 'student' object has properties like 'id', 'name', etc. -->
+        <p>ID: <%= student.id %></p>
+        <p>Name: <%= student.name %></p>
+        <!-- Display other properties as needed -->
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
